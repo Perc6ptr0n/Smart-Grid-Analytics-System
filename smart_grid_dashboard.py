@@ -10,8 +10,8 @@ Tab 2: Grid Analytics - Historical analysis
 Tab 3: Network Topology - Grid visualization  
 Tab 4: Performance Metrics - Model performance
 
-Author: Smart Grid Team
-Date: December 2024
+Author: Laios Ioannis
+Date: September 2025
 """
 
 import streamlit as st
@@ -1095,4 +1095,5 @@ class SmartGridDashboard:
 # Main execution
 if __name__ == "__main__":
     dashboard = SmartGridDashboard()
+
     dashboard.run()
