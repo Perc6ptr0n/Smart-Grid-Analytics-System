@@ -1,0 +1,52 @@
+# Smart Grid Load Balancing Optimizer - Requirements
+# ================================================
+
+# Core Data Science Stack
+pandas>=2.0.0,<3.0.0
+numpy>=1.24.0,<2.0.0
+scikit-learn>=1.3.0,<2.0.0
+scipy>=1.10.0,<2.0.0
+
+# Machine Learning Frameworks
+catboost>=1.2.0,<2.0.0
+lightgbm>=4.0.0,<5.0.0
+xgboost>=1.7.0,<2.0.0
+
+# Deep Learning (GPU Support)
+torch>=2.0.0,<3.0.0
+torchvision>=0.15.0,<1.0.0
+
+# Visualization & Dashboard
+streamlit>=1.28.0,<2.0.0
+plotly>=5.17.0,<6.0.0
+matplotlib>=3.7.0,<4.0.0
+seaborn>=0.12.0,<1.0.0
+
+# Data Validation & Schema
+jsonschema>=4.17.0,<5.0.0
+
+# Time Series & Statistics
+statsmodels>=0.14.0,<1.0.0
+
+# Performance & Utilities
+joblib>=1.3.0,<2.0.0
+psutil>=5.9.0,<6.0.0
+schedule>=1.2.0,<2.0.0
+tqdm>=4.65.0,<5.0.0
+
+# Data I/O & Formats
+pyarrow>=14.0.0,<15.0.0
+openpyxl>=3.1.0,<4.0.0
+
+# Performance Optimization
+numba>=0.58.0,<1.0.0
+
+# Development & Testing (optional)
+pytest>=7.4.0,<8.0.0
+black>=23.0.0,<24.0.0
+isort>=5.12.0,<6.0.0
+mypy>=1.5.0,<2.0.0
+
+# Documentation (optional)
+sphinx>=7.0.0,<8.0.0
+sphinx-rtd-theme>=1.3.0,<2.0.0

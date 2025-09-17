@@ -1,0 +1,52 @@
+version: '3.8'
+
+services:
+  smart-grid:
+    build: .
+    ports:
+      - "8050:8050"
+    environment:
+      - GRID_ENV=production
+      - ANOMALY_THRESHOLD=0.85
+      - FORECAST_THRESHOLD=0.8
+      - PEER_THRESHOLD=1.5
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./models:/app/models
+      - ./outputs:/app/outputs
+    command: dashboard
+    
+  smart-grid-dev:
+    build: .
+    ports:
+      - "8051:8050"
+    environment:
+      - GRID_ENV=development
+      - ANOMALY_THRESHOLD=0.7
+      - FORECAST_THRESHOLD=0.6
+    volumes:
+      - .:/app
+    command: dashboard
+    
+  smart-grid-pipeline:
+    build: .
+    environment:
+      - GRID_ENV=production
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./models:/app/models
+      - ./outputs:/app/outputs
+    command: pipeline
+    
+  smart-grid-backtest:
+    build: .
+    environment:
+      - GRID_ENV=production
+    volumes:
+      - ./data:/app/data
+      - ./logs:/app/logs
+      - ./models:/app/models
+      - ./outputs:/app/outputs
+    command: backtest
