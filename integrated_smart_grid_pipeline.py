@@ -6,8 +6,8 @@ Integrated Smart Grid Pipeline System
 Complete pipeline system with optimized memory usage and GPU support.
 Handles both training and deployment workflows.
 
-Author: Smart Grid Team
-Date: December 2024
+Author: Laios Ioannis
+Date: September 2025
 """
 
 import pandas as pd
@@ -1074,4 +1074,5 @@ if __name__ == "__main__":
             logger.info("Deployment successful!")
         else:
             logger.error("Deployment failed!")
+
             exit(1)
