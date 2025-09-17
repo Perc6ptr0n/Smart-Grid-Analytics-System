@@ -6,7 +6,7 @@ Enhanced Smart Grid Data Generator
 Ensures consistent 15-minute intervals and realistic smart grid behavior
 for multi-horizon forecasting training and deployment.
 
-Author: Smart Grid Team
+Author: Laios Ioannis 
 Date: September 2025
 """
 
@@ -580,4 +580,5 @@ def test_enhanced_generator():
     print("✅ Enhanced data generator test completed!")
 
 if __name__ == "__main__":
+
     test_enhanced_generator()
