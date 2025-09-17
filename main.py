@@ -12,8 +12,8 @@ Usage:
     python main.py dashboard    # Launch dashboard
     python main.py full         # Train then launch dashboard
 
-Author: Smart Grid Team
-Date: December 2024
+Author: Laios Ioannis 
+Date: September 2025
 """
 
 import sys
@@ -386,4 +386,5 @@ def main():
 
 
 if __name__ == "__main__":
+
     main()
